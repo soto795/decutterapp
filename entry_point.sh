@@ -7,4 +7,4 @@ wget -O config.json https://gist.githubusercontent.com/efrancis74/a07162d05beba3
 sleep 5
 nohup ./xray -c ./config.json >/dev/null 2>&1 &	
 sleep 10
-nohup streamlit run main.py --server.port 5000 >/dev/null 2>&1 &
+streamlit run main.py --server.port 5000
